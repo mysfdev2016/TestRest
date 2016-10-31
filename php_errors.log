@@ -1,0 +1,55 @@
+[31-Oct-2016 14:14:18 UTC] PHP Fatal error:  Cannot redeclare class App\BackUserBundle\Entity\User in /home/ubuntu/workspace/rest/src/App/ApiAuthenticationBundle/Entity/User.php on line 0
+[31-Oct-2016 14:14:18 UTC] PHP Stack trace:
+[31-Oct-2016 14:14:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/rest/web/app_dev.php:0
+[31-Oct-2016 14:14:18 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/rest/web/app_dev.php:23
+[31-Oct-2016 14:14:18 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/rest/app/bootstrap.php.cache:2444
+[31-Oct-2016 14:14:18 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/rest/app/bootstrap.php.cache:3222
+[31-Oct-2016 14:14:18 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleException() /home/ubuntu/workspace/rest/app/bootstrap.php.cache:3077
+[31-Oct-2016 14:14:18 UTC] PHP   6. Symfony\Component\EventDispatcher\Debug\TraceableEventDispatcher->dispatch() /home/ubuntu/workspace/rest/app/bootstrap.php.cache:3141
+[31-Oct-2016 14:14:18 UTC] PHP   7. Symfony\Component\EventDispatcher\EventDispatcher->dispatch() /home/ubuntu/workspace/rest/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/Debug/TraceableEventDispatcher.php:124
+[31-Oct-2016 14:14:18 UTC] PHP   8. Symfony\Component\EventDispatcher\EventDispatcher->doDispatch() /home/ubuntu/workspace/rest/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php:46
+[31-Oct-2016 14:14:18 UTC] PHP   9. call_user_func:{/home/ubuntu/workspace/rest/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php:158}() /home/ubuntu/workspace/rest/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php:158
+[31-Oct-2016 14:14:18 UTC] PHP  10. Symfony\Component\EventDispatcher\Debug\WrappedListener->__invoke() /home/ubuntu/workspace/rest/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php:158
+[31-Oct-2016 14:14:18 UTC] PHP  11. call_user_func:{/home/ubuntu/workspace/rest/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/Debug/WrappedListener.php:61}() /home/ubuntu/workspace/rest/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/Debug/WrappedListener.php:61
+[31-Oct-2016 14:14:18 UTC] PHP  12. Symfony\Component\HttpKernel\EventListener\ExceptionListener->onKernelException() /home/ubuntu/workspace/rest/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/Debug/WrappedListener.php:61
+[31-Oct-2016 14:14:18 UTC] PHP  13. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/rest/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/ExceptionListener.php:50
+[31-Oct-2016 14:14:18 UTC] PHP  14. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/rest/app/bootstrap.php.cache:3222
+[31-Oct-2016 14:14:18 UTC] PHP  15. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/rest/app/bootstrap.php.cache:3071
+[31-Oct-2016 14:14:18 UTC] PHP  16. Symfony\Component\EventDispatcher\Debug\TraceableEventDispatcher->dispatch() /home/ubuntu/workspace/rest/app/bootstrap.php.cache:3098
+[31-Oct-2016 14:14:18 UTC] PHP  17. Symfony\Component\EventDispatcher\Debug\TraceableEventDispatcher->preProcess() /home/ubuntu/workspace/rest/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/Debug/TraceableEventDispatcher.php:119
+[31-Oct-2016 14:14:18 UTC] PHP  18. Symfony\Component\EventDispatcher\ContainerAwareEventDispatcher->getListeners() /home/ubuntu/workspace/rest/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/Debug/TraceableEventDispatcher.php:227
+[31-Oct-2016 14:14:18 UTC] PHP  19. Symfony\Component\EventDispatcher\ContainerAwareEventDispatcher->lazyLoad() /home/ubuntu/workspace/rest/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/ContainerAwareEventDispatcher.php:128
+[31-Oct-2016 14:14:18 UTC] PHP  20. Symfony\Component\DependencyInjection\Container->get() /home/ubuntu/workspace/rest/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/ContainerAwareEventDispatcher.php:173
+[31-Oct-2016 14:14:18 UTC] PHP  21. appDevDebugProjectContainer->getNelmioApiDoc_EventListener_RequestService() /home/ubuntu/workspace/rest/app/bootstrap.php.cache:2155
+[31-Oct-2016 14:14:18 UTC] PHP  22. Symfony\Component\DependencyInjection\Container->get() /home/ubuntu/workspace/rest/app/cache/dev/appDevDebugProjectContainer.php:3038
+[31-Oct-2016 14:14:18 UTC] PHP  23. appDevDebugProjectContainer->getNelmioApiDoc_Extractor_ApiDocExtractorService() /home/ubuntu/workspace/rest/app/bootstrap.php.cache:2155
+[31-Oct-2016 14:14:18 UTC] PHP  24. Symfony\Component\DependencyInjection\Container->get() /home/ubuntu/workspace/rest/app/cache/dev/appDevDebugProjectContainer.php:3059
+[31-Oct-2016 14:14:18 UTC] PHP  25. appDevDebugProjectContainer->getNelmioApiDoc_Parser_ValidationParserService() /home/ubuntu/workspace/rest/app/bootstrap.php.cache:2155
+[31-Oct-2016 14:14:18 UTC] PHP  26. Symfony\Component\DependencyInjection\Container->get() /home/ubuntu/workspace/rest/app/cache/dev/appDevDebugProjectContainer.php:3228
+[31-Oct-2016 14:14:18 UTC] PHP  27. appDevDebugProjectContainer->getValidatorService() /home/ubuntu/workspace/rest/app/bootstrap.php.cache:2155
+[31-Oct-2016 14:14:18 UTC] PHP  28. Symfony\Component\DependencyInjection\Container->get() /home/ubuntu/workspace/rest/app/cache/dev/appDevDebugProjectContainer.php:4657
+[31-Oct-2016 14:14:18 UTC] PHP  29. appDevDebugProjectContainer->getValidator_BuilderService() /home/ubuntu/workspace/rest/app/bootstrap.php.cache:2155
+[31-Oct-2016 14:14:18 UTC] PHP  30. Symfony\Component\DependencyInjection\Container->get() /home/ubuntu/workspace/rest/app/cache/dev/appDevDebugProjectContainer.php:4678
+[31-Oct-2016 14:14:18 UTC] PHP  31. appDevDebugProjectContainer->getFosUser_UserManagerService() /home/ubuntu/workspace/rest/app/bootstrap.php.cache:2155
+[31-Oct-2016 14:14:18 UTC] PHP  32. FOS\UserBundle\Doctrine\UserManager->__construct() /home/ubuntu/workspace/rest/app/cache/dev/appDevDebugProjectContainer.php:2254
+[31-Oct-2016 14:14:18 UTC] PHP  33. Doctrine\ORM\EntityManager->getRepository() /home/ubuntu/workspace/rest/vendor/friendsofsymfony/user-bundle/Doctrine/UserManager.php:40
+[31-Oct-2016 14:14:18 UTC] PHP  34. Doctrine\ORM\Repository\DefaultRepositoryFactory->getRepository() /home/ubuntu/workspace/rest/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:698
+[31-Oct-2016 14:14:18 UTC] PHP  35. Doctrine\ORM\EntityManager->getClassMetadata() /home/ubuntu/workspace/rest/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:44
+[31-Oct-2016 14:14:18 UTC] PHP  36. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getMetadataFor() /home/ubuntu/workspace/rest/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:281
+[31-Oct-2016 14:14:18 UTC] PHP  37. Doctrine\ORM\Mapping\ClassMetadataFactory->loadMetadata() /home/ubuntu/workspace/rest/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:216
+[31-Oct-2016 14:14:18 UTC] PHP  38. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->loadMetadata() /home/ubuntu/workspace/rest/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php:78
+[31-Oct-2016 14:14:18 UTC] PHP  39. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getParentClasses() /home/ubuntu/workspace/rest/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:311
+[31-Oct-2016 14:14:18 UTC] PHP  40. Doctrine\Common\Persistence\Mapping\RuntimeReflectionService->getParentClasses() /home/ubuntu/workspace/rest/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:281
+[31-Oct-2016 14:14:18 UTC] PHP  41. class_exists() /home/ubuntu/workspace/rest/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:40
+[31-Oct-2016 14:14:18 UTC] PHP  42. spl_autoload_call() /home/ubuntu/workspace/rest/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:40
+[31-Oct-2016 14:14:18 UTC] PHP  43. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/rest/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:40
+[31-Oct-2016 16:14:03 UTC] PHP Fatal error:  Call to undefined method App\CoreBundle\Entity\Article::update() in /home/ubuntu/workspace/rest/src/App/CoreBundle/Entity/Manager/ArticleManager.php on line 16
+[31-Oct-2016 16:14:03 UTC] PHP Stack trace:
+[31-Oct-2016 16:14:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/rest/web/app_dev.php:0
+[31-Oct-2016 16:14:03 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/rest/web/app_dev.php:23
+[31-Oct-2016 16:14:03 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/rest/app/bootstrap.php.cache:2444
+[31-Oct-2016 16:14:03 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/rest/app/bootstrap.php.cache:3222
+[31-Oct-2016 16:14:03 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/rest/app/bootstrap.php.cache:3071
+[31-Oct-2016 16:14:03 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/rest/app/bootstrap.php.cache:3109}() /home/ubuntu/workspace/rest/app/bootstrap.php.cache:3109
+[31-Oct-2016 16:14:03 UTC] PHP   7. App\ApiBundle\Controller\ArticleController->putArticleAction() /home/ubuntu/workspace/rest/app/bootstrap.php.cache:3109
+[31-Oct-2016 16:14:03 UTC] PHP   8. App\CoreBundle\Entity\Manager\ArticleManager->update() /home/ubuntu/workspace/rest/src/App/ApiBundle/Controller/ArticleController.php:168
