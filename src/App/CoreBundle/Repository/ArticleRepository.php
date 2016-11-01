@@ -14,7 +14,7 @@ class ArticleRepository extends AbstractRepository
     /**
      * Returns all articles ordered by title ascendant.
      *
-     * @return \App\CoreBundle\Entity\category
+     * @return \App\CoreBundle\Entity\Article
      */
     public function getArticles()
     {

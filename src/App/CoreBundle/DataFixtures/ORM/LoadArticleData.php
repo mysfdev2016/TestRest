@@ -14,13 +14,11 @@ class LoadArticleData extends AbstractFixture implements OrderedFixtureInterface
     {
 
             for ($i = 1; $i < 30; $i++) {
-                $art = new Article();
-                $art->setTitle('Article ' . $i );
-                //$art->setLeading('Accroche article'.$i );
+                $art = new Article('Article ' . $i );
+                $art->setLeading('Accroche article'.$i );
                 $art->setSlug('article-' . $i );
-                $art->setDescription('description article ' . $i );
-                //$art->setBody('description article ' . $i );
-                //$art->setCreatedBy('Fake User ' . $i);
+                $art->setBody('description article ' . $i );
+                $art->setCreatedBy('Fake User ' . $i);
                 $manager->persist($art);
             }
 
